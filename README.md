@@ -13,3 +13,10 @@
 ```
 npm init vue@latest
 ```
+
+## run
+
+```
+npm run format
+npm run dev
+```
