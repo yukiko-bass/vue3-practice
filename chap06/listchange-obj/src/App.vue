@@ -14,7 +14,7 @@ const whiteLadyInit: {
 }
 const whiteLady = ref(whiteLadyInit)
 const changeWhiteLadyPrice = (): void => {
-  whiteLady.value.price = 1500
+  whiteLady.value.price = 1500;
 }
 </script>
 
@@ -25,6 +25,8 @@ const changeWhiteLadyPrice = (): void => {
       <dd>{{ value }}</dd>
     </template>
   </dl>
-  <br />
-  <p>価格を1500円に <button v-on:click="changeWhiteLadyPrice">変更</button></p>
+  <br>
+  <p>
+    価格を1500円に <button v-on:click="changeWhiteLadyPrice">変更</button>
+  </p>
 </template>
