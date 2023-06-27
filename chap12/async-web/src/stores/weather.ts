@@ -51,7 +51,7 @@ export const useWeatherStore = defineStore({
       } = {
         lang: 'ja',
         q: this.selectedCity.q,
-        appId: 'b55a990b935c8b58a45cb27323f07cd7'
+        appId: import.meta.env.VITE_WEATHER_APP_KEY
       }
       const queryParams = new URLSearchParams(params)
       const urlFull = `${weatherInfoUrl}?${queryParams}`
